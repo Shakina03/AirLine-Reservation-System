@@ -1,0 +1,72 @@
+# AirLine-Reservation-System
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Reservation System</title>
+  <link rel="stylesheet" href="line.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Airline Reservation System</h1>
+    
+    <div class="form-section">
+      <h2>Select Flight</h2>
+      <form id="flight-form">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required>
+
+        <label for="departure">Departure Date:</label>
+        <input type="date" id="departure" name="departure" required>
+
+        <label for="return">Return Date:</label>
+        <input type="date" id="return" name="return">
+
+        <button type="submit">Search Flights</button>
+      </form>
+    </div>
+    
+    <div class="available-flights">
+      <h2>Available Flights</h2>
+      <div id="flights-list">
+        <!-- Flight options will appear here after form submission -->
+      </div>
+    </div>
+    
+    <div class="reservation-form">
+      <h2>Passenger Details</h2>
+      <form id="passenger-form" style="display: none;">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Confirm Reservation</button>
+      </form>
+    </div>
+<div class="admin-view">
+  <h2>Admin View</h2>
+  <div id="admin-passenger-form" style="display: none; border: 1px solid #ccc; padding: 10px;">
+    <p><strong>Full Name:</strong> <span id="admin-name"></span></p>
+    <p><strong>Email:</strong> <span id="admin-email"></span></p>
+    <p><strong>Phone Number:</strong> <span id="admin-phone"></span></p>
+    <p><strong>From:</strong> <span id="admin-from"></span></p>
+    <p><strong>To:</strong> <span id="admin-to"></span></p>
+    <p><strong>Departure Date:</strong> <span id="admin-departure"></span></p>
+    <p><strong>Return Date:</strong> <span id="admin-return"></span></p>
+  </div>
+</div>
+  </div>
+
+  <script src="airline.js"></script>
+</body>
+</html>
