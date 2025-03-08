@@ -1,2 +1,5 @@
 # AirLine-Reservation-System
 
+This is the basic web application.
+This project is designed to manage airline bookings and reservations efficiently. It enables users to search for flights, book tickets, manage bookings and view flight details additionally with their personal details. It also provides the complete reservation details of a passenger to the admin.  
+Save the file names same as it is shown. If at all we use other file names we need change their file names in source code too. 
